@@ -11,10 +11,6 @@ const dbConnect = () => {
 		.connect(process.env.DATABASE_URL, {
 			useNewUrlParser: true,
 			useUnifiedTopology: true,
-			headers:{
-                               accept: 'application/json',
-                                'User-agent': 'learning app',
-                                 }
 		})
 		// If the connection is successful, log a success message
 		.then(() => console.log("DB CONNECTION SUCCESS"))
