@@ -14,7 +14,7 @@ app.use(
 // Middleware
 app.use(express.json());
 
-app.use("/api/v1", userRoutes);
+app.use("https://employess-backend.onrender.com", userRoutes);
 
 // CORS Configuration
 app.listen(PORT, () => {
